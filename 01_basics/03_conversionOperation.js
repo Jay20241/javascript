@@ -42,3 +42,24 @@ console.log(null>=0);//true
 
 console.log( "2" == 2 ); //true
 console.log( "2" === 2 ); //false
+
+// Primitive dataTypes - call by value //7: String, Number, Boolean, null, undefined, Symbol, BigInt
+// Non-premitive dataTypes - call by reference //Arrays, Objects, Functions
+//Here, number is number, not int & float
+
+const id1 = Symbol("123");
+const id2 = Symbol("123");
+console.log( id1 == id2 ); //false
+
+//const bigNumber = 1354384313431354313543n; //n: bigInt representation //Use 'n' at last of number for storing bigInt
+
+//Objects are in curly braces:
+const heros = ["Shaktiman", "Flying Jatt"]; //typeof: => object
+let myObject = {
+    name:"Jay",
+    age:20 //here, in place of value: it can be function, arrays or might be another object.
+}
+
+const myFunction = function() {
+    console.log("My Code");
+}
