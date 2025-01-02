@@ -25,3 +25,20 @@ let booleanIsLoggedIn = Boolean(isLoggedIn) //true
 // "true" or "jay" => true
 
 //SAME WAY, YOU CAN CONVERT /NUMBER/ TO /STRING/ ALSO.
+
+
+
+///////////////////////////////////////////////////////
+console.log("2">1); //true
+console.log("02">1); //true
+
+//Avoid this types of comparisions in production
+console.log(null>0); //false
+console.log(null==0);//false 
+console.log(null>=0);//true 
+
+//All are false in case of undefined.
+//Triple equal === Strict check ->it also checks dataTypes.
+
+console.log( "2" == 2 ); //true
+console.log( "2" === 2 ); //false
