@@ -63,3 +63,20 @@ let myObject = {
 const myFunction = function() {
     console.log("My Code");
 }
+
+//-------------Memory------------------//
+//Stack(Premitive), Heap(Non-premitive)
+
+
+//For heap memeory:
+let userOne = {
+    email: "user@google.com",
+    upi: "123"
+}
+let userTwo = userOne;
+userTwo.email = "user2024@gmai.com";
+
+console.log(userOne.email);// "user2024@gmai.com", NOT "user@google.com"
+console.log(userTwo.email);// "user2024@gmai.com"
+
+//For Stack memory, the copy of value is transffered, so original value is still older one. not new one.
