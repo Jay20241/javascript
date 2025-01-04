@@ -7,7 +7,7 @@
 //1. Literal way (Not singleton)
 //2. Constructor way (Singleton)
 
-// object literals
+// object literals way
 
 const mySym = Symbol("key1")
 
