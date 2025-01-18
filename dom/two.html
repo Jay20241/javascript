@@ -19,5 +19,24 @@
     console.log(parent.children); //HTMLCollection
     console.log(parent.children[1]); // <div class="day">Tue</div>
     console.log(parent.children[1].innerHTML); //Tue
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i].innerHTML;
+        console.log(element);
+    }
+
+    parent.children[1].style.color = "orange";
+    parent.firstElementChild;
+    parent.lastElementChild;
+
+    //Here, the trees concept of DSA works.
+    const dayOne = document.querySelector('.day');//<div class="day">Mon</div>
+
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("Nodes: ", parent.childNodes); //Interesting
+    
 </script>
 </html>
