@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My HTML Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    //two args - handler & timeout and third parameter
+    const changeMe = setTimeout(changeText, 2000) //2 seconds
+
+    //const changeMe = setTimeout(changeText(), 2000) => error => don't execute the function, just give reference
+
+    //setTimeout - do the task only one-time
+    //setInterval - repeat the task after given interval.
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("Stopped the task before 2 seconds")
+    })
+</script>
+</html>
